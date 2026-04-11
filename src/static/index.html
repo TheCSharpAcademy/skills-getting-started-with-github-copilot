@@ -19,6 +19,27 @@
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
         </div>
+        <template id="activity-card-template">
+          <article class="activity-card">
+            <h4 class="activity-title"></h4>
+            <p class="activity-description"></p>
+            <p><strong>Schedule:</strong> <span class="activity-schedule"></span></p>
+            <p><strong>Availability:</strong> <span class="activity-availability"></span></p>
+            <div class="participants-section">
+              <h5 class="participants-title">Participants</h5>
+              <ul class="participants-list"></ul>
+              <p class="participants-empty hidden">No participants yet. Be the first to join!</p>
+            </div>
+          </article>
+        </template>
+        <template id="participant-item-template">
+          <li class="participant-item">
+            <span class="participant-email"></span>
+            <button type="button" class="participant-remove-btn" aria-label="Remove participant" title="Unregister">
+              &times;
+            </button>
+          </li>
+        </template>
       </section>
 
       <section id="signup-container">
